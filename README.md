@@ -1,5 +1,7 @@
 Double Take Script Loader
 ==
+![Double Take Script Loader](https://lh6.googleusercontent.com/-oVncGY891Sc/Udl8V3DHb1I/AAAAAAAABYg/KX4pJgv0fEc/w350-h166-no/Double+Take.png "Double Take Script Loader")
+
 This is a simple way to load a local copy of a library as a fallback to an external CDN.
 
 But CDNs are awesome!?
