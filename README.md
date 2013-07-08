@@ -28,7 +28,12 @@ There are two ways to use this:
 
     `<script src="http://cdn.example.com/underscore/1.4.4/underscore-min.js" data-prop-name="_" data-local-src="underscore-min.js"></script>`
 
-With either method, you must add a script tag for the `dt-script-loader.js` file after the library script tags, but before you use the libraries. For an example of this, see `example.html`.
+With either method, you must add a script tag for the `dt-script-loader.js` file after the library script tags, but before you use the libraries.
+
+Example
+--
+For an example of how to use this function, see `example.html`. You will of course need local copies of [jQuery](http://jquery.com/download/ "jQuery Download") and [Underscore](http://underscorejs.org/ "UnderscoreJS.org") because for the purpose of the example the CDNs do not actually exist. If the example works, you should see this in the browser:
+![DT Example](https://lh5.googleusercontent.com/-PYxC4f00JEk/Udqi75-A6MI/AAAAAAAABZQ/hp9iGn6MoLg/w563-h165-no/Screen+Shot+2013-07-08+at+6.29.45+AM.png "DT Example")
 
 **Note:** `dt-script-loader.js` immediate calls `DoubleTakeScriptLoader()` with no arguments which will search the DOM for `script` tags which have the necessary `data` attributes. If this is a problem, just use method 2 (calling it directly). Or heck, it's not some sort of big library or anything, just remove the invocation yourself.
 
