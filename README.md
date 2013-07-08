@@ -32,7 +32,7 @@ With either method, you must add a script tag for the `dt-script-loader.js` file
 
 Example
 --
-For an example of how to use this function, see `example.html`. You will of course need local copies of [jQuery](http://jquery.com/download/ "jQuery Download") and [Underscore](http://underscorejs.org/ "UnderscoreJS.org") because for the purpose of the example the CDNs do not actually exist. You can also look at [the demo](http://kent.doddsfamily.us/dt-script-loader "DT Demo").
+For an example of how to use this function, see [`example.html`](https://gist.github.com/kentcdodds/5941149#file-example-html "example.html"). You will of course need local copies of [jQuery](http://jquery.com/download/ "jQuery Download") and [Underscore](http://underscorejs.org/ "UnderscoreJS.org") because for the purpose of the example the CDNs do not actually exist. You can also look at [the demo](http://kent.doddsfamily.us/dt-script-loader "DT Demo").
 
 **Note:** `dt-script-loader.js` immediate calls `DoubleTakeScriptLoader()` with no arguments which will search the DOM for `script` tags which have the necessary `data` attributes. If this is a problem, just use method 2 (calling it directly). Or heck, it's not some sort of big library or anything, just remove the invocation yourself.
 
