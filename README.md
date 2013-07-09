@@ -1,15 +1,18 @@
 Double Take Script Loader
 ==
+
 ![Double Take Script Loader](https://lh6.googleusercontent.com/-oVncGY891Sc/Udl8V3DHb1I/AAAAAAAABYg/KX4pJgv0fEc/w350-h166-no/Double+Take.png "Double Take Script Loader")
 
 This is a simple way to load a local copy of a library as a fallback to an external CDN.
 
 But CDNs are awesome!?
 --
+
 Yes they are. There are actually [some people](http://www.sitepoint.com/7-reasons-not-to-use-a-cdn/ "7 Reasons not to use a CDN") who believe you should not use CDNs. If you do decide to use a CDN, you should know that they *can* fail (unlikely) or be [blocked](http://www.theinquirer.net/inquirer/news/2135522/opendns-blocked-googles-content-delivery-network "Google CDN Gets Blocked by OpenDNS") for certain countries (rare, but possible). If a CDN fails and your site depends on that libary, then your site could really suffer and your [bounce rate](http://lmgtfy.com/?q=bounce+rate "What is a bounce rate?") will go [to infinity and beyond](http://youtu.be/ejwrxGs_Y_I?t=5s "Buzz Lightyear Clip")!
 
 How do I use this?
 --
+
 There are two ways to use this:
 
 **1. Call DoubleTakeScriptLoader:** Call directly with an array of objects (or a single object) like so:
@@ -32,6 +35,7 @@ With either method, you must add a script tag for the `dt-script-loader.js` file
 
 Example
 --
+
 For an example of how to use this function, see [`example.html`](https://gist.github.com/kentcdodds/5941149#file-example-html "example.html"). You will of course need local copies of [jQuery](http://jquery.com/download/ "jQuery Download") and [Underscore](http://underscorejs.org/ "UnderscoreJS.org") because for the purpose of the example the CDNs do not actually exist. You can also look at [the demo](http://kent.doddsfamily.us/dt-script-loader "DT Demo").
 
 **Note:** `dt-script-loader.js` immediate calls `DoubleTakeScriptLoader()` with no arguments which will search the DOM for `script` tags which have the necessary `data` attributes. If this is a problem, just use method 2 (calling it directly). Or heck, it's not some sort of big library or anything, just remove the invocation yourself.
@@ -40,4 +44,5 @@ For an example of how to use this function, see [`example.html`](https://gist.gi
 
 Disclaimer
 --
+
 I developed this quickly one Saturday afternoon. I imagine there could be some improvement to performance or something here. Feel free to leave comments to that effect :)
