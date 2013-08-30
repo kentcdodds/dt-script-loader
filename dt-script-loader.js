@@ -6,6 +6,7 @@ var DoubleTakeScriptLoader = function(scripts) {
   } else {
     scripts = document.getElementsByTagName('script');
   }
+  var scriptsToRemove = [];
   for (var i = 0; i < scripts.length; i++) {
     var script = scripts[i];
     var propName = script.propName || script.getAttribute('data-prop-name');
@@ -16,9 +17,14 @@ var DoubleTakeScriptLoader = function(scripts) {
         if (script.originalId) {
           script = document.getElementById(script.originalId);
         }
-        !script.parentNode || script.parentNode.removeChild(script);
+        if (script.parentNode) {
+          scriptsToRemove.push(script);
+        }
       }
     }
+  }
+  for (var i = 0; i < scriptsToRemove.length; i++) {
+    script.parentNode.removeChild(script);
   }
 };
 DoubleTakeScriptLoader();
