@@ -31,7 +31,9 @@ There are two ways to use this:
 
 **2. Add data attributes:** Add `data-prop-name` and `data-local-src` to script tags you wish to do a double take on. Like so:
 
-    `<script src="http://cdn.example.com/underscore/1.4.4/underscore-min.js" data-prop-name="_" data-local-src="underscore-min.js"></script>`
+```html
+<script src="http://cdn.example.com/underscore/1.4.4/underscore-min.js" data-prop-name="_" data-local-src="underscore-min.js"></script>
+```
 
 With either method, you must add a script tag for the `dt-script-loader.js` file after the library script tags, but before you use the libraries.
 
