@@ -1,3 +1,9 @@
+//     dt-script-loader.js
+//     (c) 2013 Kent C. Dodds
+//     dt-script-loader.js may be freely distributed under the MIT license.
+//     http://www.github.com/kentcdodds/dt-script-loader.git
+//     See README.md
+
 var DoubleTakeScriptLoader = function(scripts) {
   if (scripts) {
     if (Object.prototype.toString.call(scripts) !== '[object Array]' ) {
