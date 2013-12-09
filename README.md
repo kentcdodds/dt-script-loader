@@ -48,3 +48,6 @@ Disclaimer
 --
 
 I developed this quickly one Saturday afternoon. I imagine there could be some improvement to performance or something here. Feel free to leave comments to that effect :)
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kentcdodds/dt-script-loader/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
